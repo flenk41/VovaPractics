@@ -1,0 +1,106 @@
+﻿<Page x:Class="VovaPractics.Pages.MenuFoodPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:BD="clr-namespace:VovaPractics.BD"
+      xmlns:local="clr-namespace:VovaPractics.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" MinHeight="800" MinWidth="1600"
+      Title="MenuFoodPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="32*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock  Text="Food" FontSize="30" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5,5,5,5"/>
+        <Rectangle Grid.Row="1" Fill="#cf2f44" Height="15" VerticalAlignment="Top" Grid.ColumnSpan="8"/>
+        <ListView Background="Black" Name="ListProduction" Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="8" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <StackPanel>
+                <Image Source="/ImgFood/1.jpg" Width="120" />
+                <TextBlock Text="Бургер | 250р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/2.jpg" Width="120" />
+                <TextBlock Text="Пица | 550р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/3.jpg" Width="120" />
+                <TextBlock Text="Салат | 340р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/4.jpeg" Width="120" />
+                <TextBlock Text="Суп | 180р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/5.jpg" Width="120" />
+                <TextBlock Text="Сендвич | 150р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/6.jpg" Width="120" />
+                <TextBlock Text="Ролы | 600р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/7.jpg" Width="120" />
+                <TextBlock Text="Ролы | 370р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/8.jpeg" Width="120" />
+                <TextBlock Text="Стейк | 550р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/9.jpeg" Width="120" />
+                <TextBlock Text="Паста | 270р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/ImgFood/10.jpg" Width="120" />
+                <TextBlock Text="Рыба | 450р" Background="AliceBlue"/>
+            </StackPanel>
+        </ListView>
+        <ListView Background="Black" Name="ListFood" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="8" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <StackPanel>
+                <Image Source="/DrinkImg/1.jpg" Width="120"/>
+                <TextBlock Text="Добрый кола 1л | 90р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/DrinkImg/2.jpg" Width="120"/>
+                <TextBlock Text="Добрый кола 0.25л | 60р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/DrinkImg/3.jpg" Width="120" />
+                <TextBlock Text="Святой источник 1л | 59р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/DrinkImg/5.jpg" Width="120" />
+                <TextBlock Text="Monster 0,5л | 110р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/DrinkImg/4.jpg" Width="120"/>
+                <TextBlock Text="Adrenalin Rush 0,5л | 110р" Background="AliceBlue"/>
+            </StackPanel>
+            <StackPanel>
+                <Image Source="/DrinkImg/6.jpg" Width="120" />
+                <TextBlock Text="Сок 1,5л | 120р" Background="AliceBlue"/>
+            </StackPanel>
+        </ListView>
+    </Grid>
+</Page>
